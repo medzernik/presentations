@@ -8,7 +8,7 @@ class: "text-center"
 fonts:
   mono: "TX-02, JetBrainsMono Nerd Font"
 # some information about the slides, markdown enabled
-
+transition: slide-left
 mdc: true
 ---
 
@@ -298,9 +298,63 @@ An "AI" editor
 - Started out as a collaboration editor to make a proper livecoding system
 - Jumped on the AI hype train
 - Has a phenomenal VIM Mode 
-- Basic Git integration
+- Basic Git integration and extension support
 - Advanced collab tools - Voice chat, screen sharing, project sharing (Discord-like)
 - Free to use ($10 monthly token credit for AI features)
 - Source code on GitHub - available for MacOS, Linux and soon Windows (can be built from `master`)
 - Will charge for some collaboration tooling and charges for AI usage exceeding $10 token value
 - Very similair to Helix, but has a GUI, uses VIM motions (optionally), has better Git support and has AI tooling
+- [https://zed.dev](https://zed.dev)
+
+---
+
+# IDEs - Zed
+
+<div h="100%">
+  <SlidevVideo v-click autoplay h="100%">
+    <source 
+    src="https://customer-snccc0j9v3kfzkif.cloudflarestream.com/cad3f9d2a307574344e41c199677609e/downloads/default.mp4" type="video/mp4" />
+  </SlidevVideo>
+</div>
+
+---
+
+# Terminal tools - starship
+A better command prompt
+
+- Written in Rust
+- Integrates even into PowerShell
+- Git integration, shows time, Rust/other language integration, etc
+- **Requires Powerline fonts**
+
+Installation:
+```zsh
+$ brew install starship
+
+# ~/.zshrc
+eval "$(starship init zsh)"
+```
+
+Usage:
+```zsh
+󰀵 david  …/showcase   master ?   v1.84.0   15:25
+
+```
+---
+
+# Terminal tools - zellij
+A better tmux
+- Try without installing: ``$ bash <(curl -L https://zellij.dev/launch)``
+
+<img h="82%" src="https://zellij.dev/img/tutorial-1-command-panes.png"/>
+
+---
+
+# Terminal tools - bottom
+A better top? (lol)
+
+```zsh
+$ brew install bottom #binary is `btm`
+```
+
+<img h="80%" src="https://github.com/ClementTsang/bottom/raw/main/assets/demo.gif" />
