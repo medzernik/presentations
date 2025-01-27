@@ -237,6 +237,14 @@ term_size->libc  0.2.18   0.2.29  0.2.29   Normal       cfg(not(target_os = "win
 
 ---
 
+# cargo-wizard && cargo-pgo
+Optimizing the project quickly
+
+<img h="90%" src="https://github.com/Kobzol/cargo-wizard/raw/main/img/wizard-demo.gif"/>
+
+
+---
+
 # IDEs - RustRover
 A JetBrains ecosystem IDE
 - A fairly new IDE
@@ -311,7 +319,7 @@ An "AI" editor
 # IDEs - Zed
 
 <div h="100%">
-  <SlidevVideo v-click autoplay h="100%">
+  <SlidevVideo autoplay h="100%">
     <source 
     src="https://customer-snccc0j9v3kfzkif.cloudflarestream.com/cad3f9d2a307574344e41c199677609e/downloads/default.mp4" type="video/mp4" />
   </SlidevVideo>
@@ -348,6 +356,7 @@ A better tmux
 
 <img h="82%" src="https://zellij.dev/img/tutorial-1-command-panes.png"/>
 
+
 ---
 
 # Terminal tools - bottom
@@ -358,3 +367,36 @@ $ brew install bottom #binary is `btm`
 ```
 
 <img h="80%" src="https://github.com/ClementTsang/bottom/raw/main/assets/demo.gif" />
+
+
+---
+
+# ripgrep
+A fast grep in Rust
+
+```zsh
+$ brew install ripgrep
+```
+Usage:
+```zsh
+$ rg <>
+```
+
+| Tool | Command | Line Count | Time |
+| --- | --- | --- | --- |
+| ripgrep | `rg -uuu -tc -n -w '[A-Z]+_SUSPEND'` | 447 | 0.063s (1.00x) |
+| ugrep | `ugrep -r -n --include='*.c' --include='*.h' -w '[A-Z]+_SUSPEND'` | 447 | 0.607s (9.62x) |
+| GNU grep | `grep -E -r -n --include='*.c' --include='*.h' -w '[A-Z]+_SUSPEND'` | 447 | 0.674s (10.69x) |
+
+
+--- 
+
+# Other tools
+Things
+- ``bat`` - better ``cat``
+- ``lsd`` - better ``ls``
+
+
+--- 
+
+# Questions?
